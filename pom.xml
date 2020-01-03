@@ -20,6 +20,14 @@
 
     <dependencies>
 
+        <!-- java.sql.SQLException: 不支持的字符集 (在类路径中添加 orai18n.jar): ZHS16GBK -->
+        <!-- https://mvnrepository.com/artifact/com.oracle.ojdbc/orai18n -->
+        <dependency>
+            <groupId>com.oracle.ojdbc</groupId>
+            <artifactId>orai18n</artifactId>
+            <version>19.3.0.0</version>
+        </dependency>
+
         <!-- Sun JSF RI 规范 API -->
         <!-- https://mvnrepository.com/artifact/com.sun.faces/jsf-api -->
         <dependency>

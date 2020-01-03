@@ -17,6 +17,7 @@ import java.time.LocalDateTime;
  * <code>@SessionScoped</code>
  *
  * @author xuxiaowei
+ * @see Serializable 用于 Session 共享的序列化
  * @since 0.0.1
  */
 @Slf4j
@@ -24,6 +25,9 @@ import java.time.LocalDateTime;
 @Scope(ViewConfiguration.SCOPE)
 public class IndexJsfController implements Serializable {
 
+    /**
+     * 用于 Session 共享的序列化
+     */
     private static final long serialVersionUID = -8377204181936446253L;
 
     private ITestService testService;

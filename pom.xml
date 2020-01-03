@@ -85,6 +85,16 @@
         </dependency>
     </dependencies>
 
+    <!-- 原 Maven 仓库 -->
+    <!-- 用于下载自定义中央仓库（阿里云）无法下载依赖时使用，此情况较少 -->
+    <!--<repositories>
+        <repository>
+            <id>mirrorId</id>
+            <name>repositoryId</name>
+            <url>http://my.repository.com/repo/path</url>
+        </repository>
+    </repositories>-->
+
     <build>
         <plugins>
             <plugin>

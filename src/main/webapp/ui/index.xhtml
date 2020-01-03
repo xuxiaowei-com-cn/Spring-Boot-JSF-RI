@@ -20,7 +20,7 @@
 <h:body>
     <h:outputLabel value="Hello World"/>
     <h:form id="indexForm">
-        <h:outputText id="indexNow" value="内容来自：#{indexController.index}，现在时间：#{indexController.now}"/>
+        <h:outputText id="indexNow" value="内容来自：#{indexJsfController.index}，现在时间：#{indexJsfController.now}"/>
         <br/>
         <h:commandButton value="更新"><f:ajax render="indexNow">更新页面内容</f:ajax></h:commandButton>
         <br/>

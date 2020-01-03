@@ -7,10 +7,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
  * JSF Controller
+ *
+ * <code>@ManagedBean</code>
+ * <code>@SessionScoped</code>
  *
  * @author xuxiaowei
  * @since 0.0.1
@@ -18,7 +22,9 @@ import java.time.LocalDateTime;
 @Slf4j
 @Component
 @Scope(ViewConfiguration.SCOPE)
-public class IndexController {
+public class IndexJsfController implements Serializable {
+
+    private static final long serialVersionUID = -8377204181936446253L;
 
     private ITestService testService;
 
